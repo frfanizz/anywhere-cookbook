@@ -5,11 +5,13 @@ package frfanizz.com.github.anywherecookbook;
  * Contains user's unique ID (email)
  */
 
+import java.util.ArrayList;
+
 public class User {
 
 	String emailLocalPart;
 	String emailDomain;
-//	ArrayList<Recipe> recipeCollection;
+	ArrayList<Recipe> recipeCollection;
 	
 	User(String emailLocalPart, String emailDomain) {
 		this.emailLocalPart = emailLocalPart;
@@ -27,6 +29,12 @@ public class User {
 	}
 	public void setEmailDomain(String emailDomain) {
 		this.emailDomain = emailDomain;
+	}
+	public ArrayList<Recipe> getRecipeCollection() {
+		return recipeCollection;
+	}
+	public void setRecipeCollection(ArrayList<Recipe> recipeCollection) {
+		this.recipeCollection = recipeCollection;
 	}
 	
 	public String toString() {
