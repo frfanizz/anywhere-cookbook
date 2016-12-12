@@ -78,8 +78,17 @@ public class ProofOfConcept {
 		Scanner input = new Scanner(System.in);
 		
 		//Create a user
-		String emailAddress = getUserString(input, "What is your email address?");
-		String[] emailParts = emailAddress.split("@");
+		boolean validUserEmail = false;
+		String[] emailParts = {"",""};
+		do {
+			try {
+				String emailAddress = getUserString(input, "What is your email address?");
+				emailParts = emailAddress.split("@");
+				validUserEmail = true;
+			} catch (Exception e) {
+				System.out.println("I'm sorry, that is not a valid email address.");
+			}
+		} while (!validUserEmail);
 		User currUser = new User(emailParts[0], emailParts[1]);
 		
 		//Menu for other functions

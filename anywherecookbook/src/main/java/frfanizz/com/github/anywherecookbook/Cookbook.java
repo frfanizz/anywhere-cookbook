@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 public class Cookbook {
 	
-	ArrayList<User> users;
-	ArrayList<Ingredient> ingredients;
+	private ArrayList<User> users;
+	private ArrayList<Ingredient> ingredients;
+//	private ArrayList<Equipment> equipments;
 	
 	Cookbook() {
 		users = new ArrayList<User>();

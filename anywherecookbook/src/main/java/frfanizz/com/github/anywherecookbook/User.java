@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class User {
 
-	String emailLocalPart;
-	String emailDomain;
-	ArrayList<Recipe> recipeCollection;
+	private String emailLocalPart;
+	private String emailDomain;
+	private ArrayList<Recipe> recipeCollection;
 	
 	User(String emailLocalPart, String emailDomain) {
 		this.emailLocalPart = emailLocalPart;

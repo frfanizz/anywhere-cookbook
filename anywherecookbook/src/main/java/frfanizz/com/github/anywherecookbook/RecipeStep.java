@@ -2,7 +2,7 @@ package frfanizz.com.github.anywherecookbook;
 
 public class RecipeStep {
 
-	String direction;
+	private String direction;
 	
 	RecipeStep(String direction) {
 		this.direction = direction;

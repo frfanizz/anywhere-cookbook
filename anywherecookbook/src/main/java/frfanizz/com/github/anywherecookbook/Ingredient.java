@@ -2,7 +2,7 @@ package frfanizz.com.github.anywherecookbook;
 
 public class Ingredient {
 	
-	String name;
+	private String name;
 	
 	Ingredient(String name) {
 		this.name = name;

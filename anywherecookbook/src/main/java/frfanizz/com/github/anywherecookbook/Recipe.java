@@ -4,13 +4,12 @@ import java.util.ArrayList;
 
 public class Recipe {
 	
-	String name;
-//	Category category;
-	User author;
-	String note;
-//	Image image; //TODO figure out how to store images. url?
-	
-	ArrayList<RecipeStep> directions;
+	private String name;
+//	private Category category;
+	private User author;
+	private String note;
+//	private Image image; //TODO figure out how to store images. url?
+	private ArrayList<RecipeStep> directions;
 	
 	Recipe(String name, User author, String note, ArrayList<RecipeStep> directions) {
 		this.name = name;
