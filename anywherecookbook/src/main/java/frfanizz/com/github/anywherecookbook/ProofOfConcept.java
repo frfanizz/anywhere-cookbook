@@ -130,7 +130,14 @@ public class ProofOfConcept {
 	}
 	
 	public static void addIngredient(Scanner input, Cookbook cookbook) {
-		
+		String userIngredientName = getUserString(input, "Enter the name of an ingredient to add");
+		Ingredient userIngredient = new Ingredient(userIngredientName);
+		if (cookbook.addIngredient(userIngredient)) {
+			System.out.println(userIngredientName + " has been added to the ingredients database.");
+		} else {
+			System.out.println(userIngredientName 
+					+ " was already found in the database (or there was an error)");
+		}
 	}
 	
 	public static void viewRecipes(Scanner input, Cookbook cookbook) {
