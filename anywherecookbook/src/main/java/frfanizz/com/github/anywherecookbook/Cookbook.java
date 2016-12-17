@@ -74,4 +74,17 @@ public class Cookbook {
 		return string;
 	}
 	
+	public ArrayList<User> searchUsers(String searchString) {
+		ArrayList<User> usersFound = new ArrayList<User>();
+		for (User user : users) {
+			if (searchString.equalsIgnoreCase(user.getEmailLocalPart())) {
+				usersFound.add(user);
+			}
+		}
+		return usersFound;
+	}
+	
+	
+	
+	
 }

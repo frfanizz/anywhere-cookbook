@@ -25,5 +25,17 @@ public class Ingredient {
 		}
 		return true;
 	}
+	
+	public boolean searchAssist(String searchString) { //TODO unit test
+		if (searchString.length() < 2 || searchString.length() > name.length()) {
+			return false;
+		}
+		for (int i = 0; i <= name.length() - searchString.length(); i++) {
+			if (searchString.equalsIgnoreCase(name.substring(i, searchString.length()+i))) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
 
